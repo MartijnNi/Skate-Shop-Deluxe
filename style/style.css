@@ -42,11 +42,9 @@ li, a, button {
 .logo:hover { 
   font-size: 5em; 
   float: left; 
-  margin: 1px 1px; 
+  margin: 0px 0px; 
   transform: rotateZ(360deg);
 }
-
-
 
 .nav__links {
     list-style: none;
@@ -67,7 +65,6 @@ li, a, button {
 .nav__links li a:hover{
 color: #413e33;
 }
-
 
 
 button {
