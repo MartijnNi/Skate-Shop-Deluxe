@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Space+Grotesk:wght@500&display=swap');
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    background-color: #eae1c0;
+    transition: 0.3s;
+}
+
+header:hover {
+    background-color: aliceblue;
+}
+
+li, a, button {
+    font-family:'Space Grotesk', sans-serif;;
+    font-weight: 500;
+    font-size: 18px;
+    color: #c64b43;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 200%;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    width: 8vh;
+}
+
+
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+.nav__links li a {
+    transition: all 0.3 ease 0;
+}
+
+.nav__links li a:hover{
+color: #413e33;
+}
+
+li,.weed:hover {
+    color: #499b4a;
+
+}
+
+button {
+    padding-top: 0.7vh;
+    padding-bottom: 0.6vh;
+    padding-left: 1vh;
+    padding-right: 1vh;     
+    background-color: #eae1c0;
+    border: none;
+    border-radius: 360px;
+    cursor: pointer;
+    transition: all 0.3 ease 0;
+}
+
+button:hover {
+    color: #413e33;
+}
+.col{
+    background-color: #c64b43;
+}
