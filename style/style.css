@@ -35,7 +35,7 @@ li, a, button {
     border-radius: 200%;
     padding-top: 0vh;
     padding-bottom: 0vh;
-    width: 8vh;
+    width: 15vh;
 }
 
 
@@ -60,10 +60,6 @@ li, a, button {
 color: #413e33;
 }
 
-li,.weed:hover {
-    color: #499b4a;
-
-}
 
 button {
     padding-top: 0.7vh;
