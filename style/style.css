@@ -4,8 +4,6 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Space+Grotesk:wght@500&display=swap');
-
 header {
     display: flex;
     justify-content:space-between;
@@ -23,9 +21,11 @@ header:hover {
 }
 
 li, a, button {
-    font-family:'Space Grotesk', sans-serif;;
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
     color: #c64b43;
     text-decoration: none;
 }
@@ -35,7 +35,7 @@ li, a, button {
     border-radius: 200%;
     padding-top: 0vh;
     padding-bottom: 0vh;
-    width: 15vh;
+    width: 11vh;
 }
 
 
@@ -76,6 +76,4 @@ button {
 button:hover {
     color: #413e33;
 }
-.col{
-    background-color: #c64b43;
-}
+
