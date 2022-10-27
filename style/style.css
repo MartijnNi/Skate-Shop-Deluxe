@@ -36,6 +36,14 @@ li, a, button {
     padding-top: 0vh;
     padding-bottom: 0vh;
     width: 11vh;
+    transition:  0.6s ease-out;
+}
+
+.logo:hover { 
+  font-size: 5em; 
+  float: left; 
+  margin: 1px 1px; 
+  transform: rotateZ(360deg);
 }
 
 
@@ -59,6 +67,7 @@ li, a, button {
 .nav__links li a:hover{
 color: #413e33;
 }
+
 
 
 button {
