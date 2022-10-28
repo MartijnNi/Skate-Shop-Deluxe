@@ -86,8 +86,7 @@ a {
 .nav__links li a:hover{  
     border:none !important;
     color: #413e33 !important;
-    transition: all 0.3s ease 0s !important;
-    
+    transition: all 0.3s ease 0s !important;   
 }
 
 
@@ -106,6 +105,8 @@ button {
 button:hover {
     color: #413e33;
     background-color:#eae1c0;
+    transform: rotateZ(36000deg);
+    transition: 10s;
     box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
 }
 
