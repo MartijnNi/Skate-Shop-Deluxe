@@ -97,10 +97,17 @@ button:hover {
 
 .mainscreen *{
     display: flex;
-    align-items: center;
     background-color: #eae1c0;
     width: 100%;
     padding-top: 0.8vh;
+}
+
+.foto1 *{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 0.8vh;
+    opacity: 0.7;
 }
 
 
