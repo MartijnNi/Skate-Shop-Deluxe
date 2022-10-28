@@ -99,15 +99,15 @@ button:hover {
     display: flex;
     background-color: #eae1c0;
     width: 100%;
-    padding-top: 0.8vh;
+    padding-top: 0vh;
 }
 
 .foto1 *{
     display: flex;
     align-items: center;
     width: 100%;
-    padding-top: 0.8vh;
-    opacity: 0.7;
+    padding-top: 0.2vh;
+    opacity: 0.3;
 }
 
 
