@@ -149,4 +149,13 @@ h1 {
     margin-left: 33.4%;
     max-width: 70vh;
 }
+.inputbar button2 {
+    background-color: #eae1c0;
+    width: 30vh;
+    margin-left: 29%;
+    margin-top: 1%
+}
 
+.inputbar button2:hover {
+    background-color: #eae1c0;
+}
