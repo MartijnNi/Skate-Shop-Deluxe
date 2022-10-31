@@ -19,16 +19,15 @@ header {
     padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color:#eae1c0;   
+    background-color:#eae1c0 transparent;   
     position: relative;
-    z-index: 1;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;    transition: 1s; 
+    z-index: 2;
+    transition: 0.5s;
 }
 
 header:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background-color: aliceblue;
-    transition: 1s; 
+    background-color: aliceblue; 
 }
 
 li, a, button {
@@ -87,7 +86,14 @@ a {
 .nav__links li a:hover{  
     border:none !important;
     color: #413e33 !important;
-    transition: all 0.3s ease 0s !important;   
+    transition: all 0.3s ease 0s !important;
+    border-radius: 360px !important;  
+    padding-top: 0.7vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;  
+    background-color:#eae1c0;
+    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px; 
 }
 
 
@@ -100,14 +106,12 @@ button {
     border-radius: 360px !important;
     background-color:aliceblue;
     cursor: pointer;
-    transition: 0.8s;
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
     color: #413e33;
     background-color:#eae1c0;
-    transform: rotateZ(36000deg);
-    transition: 10s;
     box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
 }
 
@@ -118,24 +122,6 @@ button:hover {
     padding-top: 0vh;
 }
 
-
-h1 {
-    z-index: 2;
-    text-align: center;
-    padding-top: 15vh;
-    font-family: aAkhirTahun;
-    letter-spacing: 10px;
-    font-size: 300%;
-}
-
-.quote {
-    z-index: 2;
-    font-family: aAkhirTahun;
-    letter-spacing: 10px;
-    font-size: 100%;
-    
-}
-
 .gif{
     position: absolute;
     width: 100%;
@@ -143,22 +129,64 @@ h1 {
     z-index: 0;
     left: 0px;
     top: 0px;
-    opacity: 0.7
+    opacity: 0.91;
 }
 
+.titel {
+    margin-top: 15vh;
+    padding-top: 2vh;
+    max-width: 50%; 
+    z-index: 2; 
+}
+
+@keyframes lettersh1 {
+    from {letter-spacing: 0px}
+    to {letter-spacing: 10px}
+}
+
+@keyframes slogan {
+    from {letter-spacing: 0px;}
+    to {letter-spacing: 1px}
+}
+
+h1 {
+    animation-name: lettersh1;
+    z-index: 2;
+    text-align: center;
+    font-family: aAkhirTahun;
+    letter-spacing: 10px;
+    transition: 2s;
+    padding-bottom: 0;
+}
+
+
 .slogan {
-    z-index: 3;
+    z-index: 2;
     font-family: aAkhirTahun;
     text-decoration: line-through;
     letter-spacing: 1px;
     font-size: 75%;
-    
+    transition: 2s;
+    animation-name: slogan;
 }
 
-.parkrender {
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-    left: 0px;
-    margin-top: 250vh;
+/*  _______________________________________________________________________________*/
+
+.snapbar {
+    margin-top: 50%;
+    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
 }
+
+.container {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+  }
+  
+  .child {
+    scroll-snap-align: start;
+  }
+
+
+
+
