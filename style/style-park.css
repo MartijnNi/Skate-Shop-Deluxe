@@ -116,16 +116,16 @@ button:hover {
 }
 .background{
     position: absolute;
-    width: 100%;
-    height: 100%;
     z-index: 0;
     left: 0px;
     top: 0px;
+    background-position: center;
+    background-size: cover;
 }
 h1 {
     z-index: 2;
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 5vh;
     font-family: aAkhirTahun;
     letter-spacing: 5px;
     font-size: 300%;
@@ -141,22 +141,40 @@ h1 {
     color: #eae1c0;
     -webkit-text-stroke: 0.7px black;
 }
-.afbeelding {
-    z-index: 0;
+body {
+    margin: 0;
 }
-.inputbar {
-    position: relative;
-    margin-left: 33.4%;
-    max-width: 70vh;
-    margin-top: -1%;
-}
-.inputbar button2 {
-    background-color: #eae1c0;
-    width: 30vh;
-    margin-left: 29%;
-    margin-top: 2%
-}
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
 
-.inputbar button2:hover {
-    background-color: #bbb49a;
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+    border: 2px solid rgb(0, 0, 0);
+}
+.image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-grid-col-2 {
+    grid-column: span 2;
+
+}
+.image-grid-row-2 {
+    grid-row: span 2;
+    
+}
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
