@@ -125,7 +125,7 @@ button:hover {
 h1 {
     z-index: 2;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 15vh;
     font-family: aAkhirTahun;
     letter-spacing: 5px;
     font-size: 300%;
@@ -179,3 +179,4 @@ body {
         --row-height: 200px;
     }
 }
+
