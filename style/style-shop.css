@@ -19,7 +19,7 @@ header {
     padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color:#eae1c0 transparent;   
+    background-color:#eae1c0 transparent;
     position: relative;
     z-index: 2;
     transition: 0.5s;
