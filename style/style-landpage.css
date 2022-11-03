@@ -10,6 +10,10 @@
     src: url(/Fonts/aAkhirTahun.ttf) format("opentype");
 }
 
+@keyframes header {
+    from {background-color: #eae1c0;}
+    to {background-color:transparent}
+}
 header {
     position: sticky;
     display: flex;
@@ -19,7 +23,7 @@ header {
     padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color:#eae1c0 transparent;   
+    background-color:transparent;   
     position: relative;
     z-index: 2;
     transition: 0.5s;
@@ -28,6 +32,7 @@ header {
 header:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: aliceblue; 
+    transition: 0.5s;
 }
 
 li, a, button {

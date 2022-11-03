@@ -129,6 +129,15 @@ button:hover {
     z-index: 2; 
 }
 
+.quote{
+z-index: 3;
+font-family: aAkhirTahun;
+letter-spacing: 1px;
+font-size: 115%;
+color: #eae1c0;
+-webkit-text-stroke: 0.7px black;
+}
+
 @keyframes lettersh1 {
     from {letter-spacing: 0px}
     to {letter-spacing: 10px}
@@ -160,8 +169,44 @@ h1 {
     -webkit-text-stroke: 0.7px black;
 }
 
-.card-hover-mbox{
-    margin-top: 15vh;
-    text-align: center;
-    border: 2px solid black;
+.quote-lower {
+    padding-top: 5%;
 }
+.image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 350px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    margin-top: 54vh;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: black;
+}
+.image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.image-grid > img:hover {
+    opacity: 0.9;
+}
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 1;
+    }
+}
+
+.martijn {
+    opacity: 1;
+    border: 2px solid;
+}
+
