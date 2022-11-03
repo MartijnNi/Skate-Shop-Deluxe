@@ -131,3 +131,99 @@ button:hover {
     top: 0px;
     opacity: 0.91;
 }
+
+ /*------------------------------------------------------
+  */
+
+  form
+  input(type="checkbox" id="toggleGame" class="logic-checkbox")
+  input(type="checkbox" id="HowToPlayPopup" class="logic-checkbox")
+  input(type="checkbox" id="whoAmIPopup" class="logic-checkbox")
+  input(type="checkbox" id="GraphicsLevel" class="logic-checkbox")
+  section(class="game-menu-frame")
+   header(class="game-header")
+     h1(class="game-title") 
+       div(class="line-1") CoronaVirus
+       div(class="line-2") Invaders
+       div(class="line-3") Let's save the world together!
+   nav(class="game-nav")
+     h2(class="game-nav-title") Main Menu
+     ul(class="game-nav-list")
+       li(class="game-nav-item") 
+         label(class="game-nav-button" for="toggleGame" tabindex="0") Save the World
+       li(class="game-nav-item") 
+         label(class="game-nav-button" for="HowToPlayPopup" tabindex="0") How to Play
+       li(class="game-nav-item") 
+         label(class="game-nav-button" for="GraphicsLevel" tabindex="0" id="GraphicsLevelButton") Performance
+       li(class="game-nav-item") 
+         label(class="game-nav-button" for="whoAmIPopup" tabindex="0") Who Am I
+       li(class="game-nav-item") 
+         a(class="game-nav-button" href="https://eladsc.com/") Quit
+     p(class="note") Let's beat this on together and on the way spend time doing good.
+
+   - var numbersOfVirus = 1;
+   while numbersOfVirus <= 2   
+        div(class="corona-promo-virus-" + numbersOfVirus++)
+          label(class="corona-virus")
+            div(class="body")
+              div(class="scalp")
+                - var n = 1;
+                while n <= 12
+                    span(class="hair" + n++)
+              div(class="eye1")
+              div(class="eye2")
+
+
+  section(class="game-frame")
+    - var numbersOfVirus = 1;
+    ul(class="corona-world")
+      while numbersOfVirus <= 100   
+        li(class="corona-location corona-virus-" + numbersOfVirus++ + "-location")
+          label(class="corona-virus")
+            input(type="radio")
+            div(class="body")
+              div(class="scalp")
+                - var n = 1;
+                while n <= 12
+                    span(class="hair" + n++)
+              div(class="eye1")
+              div(class="eye2")
+    div(class="sum") 
+      span(class="text") Score:
+    div(class="count-down")
+      span(class="icon") ⏲️
+      span(class="count")
+    div(class="timer")
+    section(class="game-over")
+      h2(class="game-title") Game Over
+      nav(class="game-nav")
+       ul(class="game-nav-list")
+         //li(class="game-nav-item") 
+           button(class="game-nav-button" onclick="history.go(0)") Back to Main Menu
+         li(class="game-nav-item") 
+           label(class="game-nav-button" for="whoAmIPopup" tabindex="0") Who Am I
+         li(class="game-nav-item") 
+           input(type="reset" class="game-nav-button" value="Back to Main Menu")
+         //li(class="game-nav-item") 
+           a(class="game-nav-button" href="https://eladsc.com/") Quit
+
+  section(id="whoAmI" class="popup common-content")
+    label(class="close-button" for="whoAmIPopup" tabindex="0") x
+    h3(class="common-title") Who Am I ?
+    p II’m Elad Shechter, a Web Developer specializing in CSS & HTML design and architecture.
+
+    p You can see more of my stuff on my website 
+      a(href="https://www.eladsc.dev/" target="_blank") eladsc.dev
+      |  and follow me on 
+      a(href="https://www.twitter.com/eladsc" target="_blank") twitter.com/eladsc
+      | .
+    img(src="https://assets.codepen.io/65740/internal/avatars/users/default.png?fit=crop&format=auto&height=200&version=1636190215&width=200" alt="Elad Shechter")  
+    label(class="game-nav-button" for="whoAmIPopup" tabindex="0") Close
+
+  section(id="HowToPlay" class="popup common-content")
+    label(class="close-button" for="HowToPlayPopup" tabindex="0") x
+    h3(class="common-title") How to Play ?
+    p Use the cursor ("🧼" = soap icon) to kill the Corona Virus. 
+    br
+    p The Coronavirus is a tough one! And sometimes you will need to press on the Coronavirus symbol several times in order to get rid of it.
+    label(class="game-nav-button" for="HowToPlayPopup" tabindex="0") Close
