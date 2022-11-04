@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     z-index: 0;
-    overflow: hidden;
 }
 
 @font-face {
@@ -143,8 +142,11 @@ h1 {
     color: #eae1c0;
     -webkit-text-stroke: 0.7px black;
 }
+
+
+
+
 .inputbar {
-    position: relative;
     margin-left: 33.4%;
     max-width: 70vh;
     margin-top: -1%;
@@ -163,11 +165,10 @@ h1 {
 }
 .col {
     height: 150px;
-    text-align:  center !important;
+    margin-right: 0vh;
 }
 .form-select {
     height: 50px !important;
-    overflow-y: visible !important;
     background-color: #eae1c0 !important;
     width: 300px !important;
 }
@@ -175,5 +176,6 @@ h1 {
     background-color: #bbb49a !important;
 }
 .dropdown {
+    overflow-x: hidden;
     margin-left: 18.5vh;
 }
