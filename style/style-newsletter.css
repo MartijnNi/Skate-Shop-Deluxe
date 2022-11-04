@@ -10,6 +10,10 @@
     src: url(/Fonts/aAkhirTahun.ttf) format("opentype");
 }
 
+@keyframes header {
+    from {background-color: #eae1c0;}
+    to {background-color:transparent}
+}
 header {
     position: sticky;
     display: flex;
@@ -19,15 +23,16 @@ header {
     padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color:#eae1c0 transparent;   
+    background-color:transparent;   
     position: relative;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
 }
 
 header:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background-color: aliceblue;
+    background-color: aliceblue; 
+    transition: 0.5s;
 }
 
 li, a, button {
@@ -87,13 +92,13 @@ a {
     border:none !important;
     color: #413e33 !important;
     transition: all 0.3s ease 0s !important;
-    border-radius: 360px !important;
+    border-radius: 360px !important;  
     padding-top: 0.7vh;
     padding-bottom: 0.5vh;
     padding-left: 1vh;
-    padding-right: 1vh;
+    padding-right: 1vh;  
     background-color:#eae1c0;
-    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
+    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px; 
 }
 
 
@@ -106,7 +111,7 @@ button {
     border-radius: 360px !important;
     background-color:aliceblue;
     cursor: pointer;
-    transition: 0.8s;
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
@@ -141,14 +146,12 @@ h1 {
     color: #eae1c0;
     -webkit-text-stroke: 0.7px black;
 }
-.afbeelding {
-    z-index: 0;
-}
+
 .inputbar {
     position: relative;
     margin-left: 33.4%;
     max-width: 70vh;
-    margin-top: -1%;
+    z-index: 2;
 }
 .inputbar button2 {
     background-color: #eae1c0;
@@ -160,4 +163,4 @@ h1 {
 
 .inputbar button2:hover {
     background-color: #bbb49a;
-}
+}   
