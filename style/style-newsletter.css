@@ -154,7 +154,8 @@ h1 {
     background-color: #eae1c0;
     width: 30vh;
     margin-left: 29%;
-    margin-top: 2%
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .inputbar button2:hover {

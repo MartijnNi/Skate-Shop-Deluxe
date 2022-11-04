@@ -179,4 +179,7 @@ body {
         --row-height: 200px;
     }
 }
+.googlemaps {
+    padding-left: 16px;
+}
 

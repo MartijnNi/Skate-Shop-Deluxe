@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     z-index: 0;
+    overflow: hidden;
 }
 
 @font-face {
@@ -142,7 +143,37 @@ h1 {
     color: #eae1c0;
     -webkit-text-stroke: 0.7px black;
 }
-.dropdown-menu {
-    height: 250px;
-    overflow: auto;
+.inputbar {
+    position: relative;
+    margin-left: 33.4%;
+    max-width: 70vh;
+    margin-top: -1%;
+}
+.inputbar button2 {
+    background-color: #eae1c0;
+    width: 30vh;
+    margin-left: 29%;
+}
+
+.inputbar button2:hover {
+    background-color: #bbb49a;
+}
+.inputbar button2:active {
+    background-color: #eae1c0;
+}
+.col {
+    height: 150px;
+    text-align:  center !important;
+}
+.form-select {
+    height: 50px !important;
+    overflow-y: visible !important;
+    background-color: #eae1c0 !important;
+    width: 300px !important;
+}
+.form-select:hover {
+    background-color: #bbb49a !important;
+}
+.dropdown {
+    margin-left: 18.5vh;
 }
