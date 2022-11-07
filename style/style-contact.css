@@ -213,6 +213,7 @@ h1 {
   .card__image {      
     width: 100%;
     height: auto;
+    filter: grayscale(63%);
   }
   
   .card__overlay {
