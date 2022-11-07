@@ -303,3 +303,19 @@ h1 {
     -webkit-line-clamp: 3;
     overflow: hidden;
   }    
+
+  ul {
+    list-style: none;
+  }
+
+  .icon {
+    color: #03a9f4;
+  }
+
+  .text {
+    margin: 2vh;
+    font-size: medium;
+    color: #000000;
+    font-weight:lighter;
+    text-transform: none;
+  }
