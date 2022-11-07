@@ -134,3 +134,18 @@ button:hover {
 
  /*------------------------------------------------------
   */
+
+  .grid {
+    border: 2px solid red;
+  }
+
+  .grid2 {
+    border: 2px solid green;
+  }
+
+  .grid3 {
+    border: 2px solid blue;
+  }
+
+  .productfoto {
+  }
