@@ -165,7 +165,6 @@ h1 {
 }
 .col {
     height: 150px;
-    margin-right: 0vh;
 }
 .form-select {
     height: 50px !important;
@@ -175,7 +174,9 @@ h1 {
 .form-select:hover {
     background-color: #bbb49a !important;
 }
+.form-select:visited {
+    background-color: #bbb49a !important;
+}
 .dropdown {
     overflow-x: hidden;
-    margin-left: 18.5vh;
 }

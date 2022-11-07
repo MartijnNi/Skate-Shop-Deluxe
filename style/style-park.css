@@ -175,11 +175,11 @@ body {
 }
 @media screen and (max-width: 1024px) {
     .image-grid {
-        --num-cols: 2;
-        --row-height: 200px;
+        --num-cols: 2 !important;
+        --row-height: 200px !important;
     }
 }
 .googlemaps {
-    padding-left: 16px;
+    gap: 16px;
 }
 
