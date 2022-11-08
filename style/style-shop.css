@@ -3,11 +3,20 @@
     margin: 0;
     padding: 0;
     z-index: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
 }
 
 @font-face {
     font-family: aAkhirTahun;
     src: url(/Fonts/aAkhirTahun.ttf) format("opentype");
+    overflow-y: hidden;
 }
 
 header {
@@ -19,15 +28,17 @@ header {
     padding-bottom: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
-    background-color:#eae1c0 transparent;
+    background-color:#eae1c0 transparent;   
     position: relative;
-    z-index: 2;
+    z-index: 1;
     transition: 0.5s;
+    overflow-y: hidden;
 }
 
 header:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    background-color: aliceblue; 
+    background-color: aliceblue;
+    overflow-y: hidden;
 }
 
 li, a, button {
@@ -54,6 +65,7 @@ a {
     width: 11vh;
     transition:  0.7s ease-out;
     background-color: aliceblue;
+    overflow-y: hidden !important;
 }
 
 .logo:hover { 
@@ -63,12 +75,16 @@ a {
   transform: rotateZ(360deg);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #eae1c0;
+  overflow-y: hidden !important;
 }
 
 .nav__links {
     list-style: none;
     margin-top: 3%;
     margin-bottom: 0.5%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    overflow-y: hidden;
 }
 
 .nav__links li {
@@ -77,23 +93,26 @@ a {
     padding-right: 3vh;
     padding-top: 3vh;
     padding-bottom: 1vh;    
+    overflow-y: hidden;
 }
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    overflow-y: hidden;
 }
 
 .nav__links li a:hover{  
     border:none !important;
     color: #413e33 !important;
     transition: all 0.3s ease 0s !important;
-    border-radius: 360px !important;  
+    border-radius: 360px !important;
     padding-top: 0.7vh;
     padding-bottom: 0.5vh;
     padding-left: 1vh;
-    padding-right: 1vh;  
+    padding-right: 1vh;
     background-color:#eae1c0;
-    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px; 
+    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
+    overflow-y: hidden;
 }
 
 
@@ -106,31 +125,27 @@ button {
     border-radius: 360px !important;
     background-color:aliceblue;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    color: #413e33;
-    background-color:#eae1c0;
-    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
-}
-
-.mainscreen {
-    display: flex;
-    background-color: #eae1c0;
-    width: 100%;
-    padding-top: 0vh;
-}
-
-.gif{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    left: 0px;
-    top: 0px;
-    opacity: 0.91;
+    transition: 0.8s;
+    overflow-y: hidden;
 }
 
  /*------------------------------------------------------
   */
+
+
+.row-list {
+    border: #c64b43 solid 2px;
+    margin-top: 0.5rem;
+}
+
+.row{
+    border: yellow 2px solid;
+}
+
+.content-container {
+    background-color: aliceblue;
+    text-align: center;
+
+}
+
+
