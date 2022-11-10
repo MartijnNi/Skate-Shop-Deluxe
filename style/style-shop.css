@@ -134,18 +134,46 @@ button {
 
 
 .row-list {
-    border: #c64b43 solid 2px;
     margin-top: 0.5rem;
+    background-color: transparent;
 }
 
 .row{
-    border: yellow 2px solid;
 }
 
 .content-container {
-    background-color: aliceblue;
+    background-color: #eae1c0;
     text-align: center;
+    margin-top: 0vh;
+    position: relative;
+    overflow: hidden;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px ease-in-out;
+    border-radius: 2%;
+}
 
+.content-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    overflow: hidden !important;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.content-container one {
+    font-weight: 500;
+}
+.content-container two {
+    font-weight: 700;
+}   
+.content-picture {
+    image-resolution: cover;
+    margin-top: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
