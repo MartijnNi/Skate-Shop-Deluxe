@@ -127,9 +127,7 @@ button:hover {
 .row-list {
     margin-top: 0.5rem;
     background-color: transparent;
-}
-
-.row{
+    table-layout: fixed;
 }
 
 .content-container {
@@ -147,50 +145,48 @@ button:hover {
     border-radius: 2%;
 }
 
-.content-container:hover {
-    cursor: pointer;
+.content-picture:hover {
     transform: scale(1.05);
-    overflow: hidden !important;
-    transition: 0.2s ease-in-out;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.5s;
+    overflow: hidden;
+    transition: 0.9s;
+    transform: rotate(360deg);
+    border-radius: 360px;
 }
+
+.content-picture {
+image-resolution: cover;
+margin-top: 3vh;
+transition: 0,9s;
+}
+
 .content-container p  {
     padding-right: 3vh;
     font-weight: 500;
     border: 2px solid red;
     align-self: center;
 }
-.content-picture {
-image-resolution: cover;
-margin-top: 3vh;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+
 .content-container img {
     width: 100%;
-    
 }
-.content-container button2 {   
-    border: none;
-    border-radius: 360px !important;
-    background-color:aliceblue;
+
+.basket-container button2 {
+    padding: 0.1rem 1rem;
+    text-align: center center;
+    background-color: #41e166;
+    border-radius: 360px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
-.content-container button2:hover {
-    color: #413e33;
-    background-color:#eae1c0;
-    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
+
+.basket-container button2:hover {
+background-color: #38BC57;
 }
-.content-container button3 {   
-    border: none;
-    border-radius: 360px !important;
-    background-color:aliceblue;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+
+button2{
+    margin-top: 1rem;
 }
-.content-container button3:hover {
-    color: #413e33;
-    background-color:#eae1c0;
-    box-shadow: rgba(15, 15, 29, 0.674) 0px 6px 12px -2px, rgba(0, 0, 0, 0.795) 0px 3px 7px -3px;
+.namepricing-container h6{
+    margin-bottom:1rem;
+    margin-top: 0.7rem;
 }
+
