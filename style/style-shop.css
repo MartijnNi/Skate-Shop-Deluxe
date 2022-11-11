@@ -14,8 +14,10 @@
     from {background-color: #eae1c0;}
     to {background-color:transparent}
 }
+
 header {
-    position: sticky;
+    float: left;
+    position: fixed;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -146,17 +148,15 @@ button:hover {
 }
 
 .content-picture:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
     overflow: hidden;
-    transition: 0.9s;
-    transform: rotate(360deg);
-    border-radius: 360px;
+    transition: 0.3s;
 }
 
 .content-picture {
 image-resolution: cover;
 margin-top: 3vh;
-transition: 0,9s;
+transition: 0,3s;
 }
 
 .content-container p  {
