@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: aAkhirTahun;
-    src: url(/Fonts/aAkhirTahun.ttf) format("opentype");
+    src: url(./Fonts/aAkhirTahun.ttf) format("opentype");
 }
 
 @keyframes header {

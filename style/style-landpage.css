@@ -8,13 +8,13 @@
 .bg-img {
     background-repeat: no-repeat;
     background-size:cover ;
-    background-image: url(/img/Area-51-picture.jpeg);
+    background-image: url(./img/Area-51-picture.jpeg);
 
 }
 
 @font-face {
     font-family: aAkhirTahun;
-    src: url(/Fonts/aAkhirTahun.ttf) format("opentype");
+    src: url(./Fonts/aAkhirTahun.ttf) format("opentype");
 }
 
 @keyframes header {
